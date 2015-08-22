@@ -23,32 +23,33 @@ My Vagrant personnal base box kit debian 8 powered with ruby on rails env
 ## Installation
 
 Clone the repo in ~/VagrantBox/env
-''
+'''
 cd ~/VagrantBox/env
 vagrant up
-''
+'''
 
 ## Starting the demo app to see env variables
 
-''
+'''
 ssh -p 2222 vagrant@127.0.0.1
 cd myapps/helloworld
 rails s -b 0.0.0.0
-''
+'''
+
 GO to your host and open your favorite browser and see http://127.0.0.1:3000
 
 ## Editing your rails file in your host
 
 All new apps in the guest myapps directory will be synced with the host ~/VagrantBox/env/myapps
 
-''
+'''
 ssh -p 2222 vagrant@127.0.0.1
 cd myapps
 rails new sqlite3demoapp
 exit
 ls ~/VagrantBox/env/myapps/sqlite3demoapp
 atom .
-''
+'''
 
 ## Info
 
