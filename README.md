@@ -5,6 +5,7 @@ My Vagrant personnal base box kit debian 8 powered with ruby on rails env
 
 - Virtualbox 5.0.2
 - Vagrant_1.7.4_x86_64.deb
+- Need to have the package.box in ~/VagrantBox/Box
 
 ## Featuring
 
@@ -20,21 +21,24 @@ My Vagrant personnal base box kit debian 8 powered with ruby on rails env
 - a demo rails "helloword" app
 - fr local
 - nodejs
+- vim
+- HardDisk of only 4.5 Go extensible to 40
+
 ## Installation
 
 Clone the repo in ~/VagrantBox/env
-'''
+```
 cd ~/VagrantBox/env
 vagrant up
-'''
+```
 
 ## Starting the demo app to see env variables
 
-'''
+```
 ssh -p 2222 vagrant@127.0.0.1
 cd myapps/helloworld
 rails s -b 0.0.0.0
-'''
+```
 
 GO to your host and open your favorite browser and see http://127.0.0.1:3000
 
@@ -42,14 +46,14 @@ GO to your host and open your favorite browser and see http://127.0.0.1:3000
 
 All new apps in the guest myapps directory will be synced with the host ~/VagrantBox/env/myapps
 
-'''
+```
 ssh -p 2222 vagrant@127.0.0.1
 cd myapps
 rails new sqlite3demoapp
 exit
 ls ~/VagrantBox/env/myapps/sqlite3demoapp
 atom .
-'''
+```
 
 ## Info
 
