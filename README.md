@@ -16,11 +16,11 @@ My Vagrant personnal base box kit debian 8 powered with ruby on rails env
 - sqlite3
 - postgresql
 - git
-- gems : rails bundler colored pg
+- gems : rails(4.2.3) bundler colored pg
 - ssh and http redirect to the host
 - a demo rails "helloword" app
 - fr local
-- nodejs
+- nodejs (v8)
 - vim
 - HardDisk of only 4.5 Go extensible to 40
 
@@ -40,7 +40,7 @@ cd myapps/helloworld
 rails s -b 0.0.0.0
 ```
 
-GO to your host and open your favorite browser and see http://127.0.0.1:3000
+GO to your host and open your favorite browser and see http://127.0.0.1:3000 for info on env variables
 
 ## Editing your rails file in your host
 
